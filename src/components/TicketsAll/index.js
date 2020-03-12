@@ -16,7 +16,7 @@ class TicketsAll extends Component {
     return stopsAll
   }
 
-  getFilterData = (data) => {
+  getFilterData = data => {
     const { notTransfer, oneTransfer, twoTransfer, threeTransfer, checkFilterTickets } = this.props
     const filterChecks = [notTransfer, oneTransfer, twoTransfer, threeTransfer]
     let filterData = data
@@ -57,7 +57,7 @@ class TicketsAll extends Component {
     const filterData = data && this.getFilterData(data)
     const sortData = filterData && this.getSortData(filterData)
 
-    return(
+    return (
       <div className="tickets">
         {
           filterData && sortData.slice(0, countItems).map((el, index)=>

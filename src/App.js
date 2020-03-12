@@ -14,12 +14,12 @@ class App extends Component {
     data: ''
   }
   
-  componentDidMount(){
+  componentDidMount() {
     const { getData } = this.props
     getData()
   }
 
-  render(){
+  render() {
     return (
       <div className="App">
         <img className="App__logo" src={logo} alt="logo" />
@@ -38,9 +38,9 @@ class App extends Component {
   }
 }
 
-const mapDispatchToProps = dispatch =>{
+const mapDispatchToProps = dispatch => {
   return{
-    getData: ()=>dispatch(getDataFromApi())
+    getData: () => dispatch(getDataFromApi())
   }
 }
 

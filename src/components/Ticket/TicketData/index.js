@@ -30,7 +30,7 @@ const TicketData = props => {
     return `${hours}:${minuts} - ${endHours}:${endMinuts}`
   }
   
-  return(
+  return (
     <div className="ticket__row">
       <div className="ticket__col">
         <p className="ticket__value">{origin} – {destination}</p>

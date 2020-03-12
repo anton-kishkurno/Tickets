@@ -10,20 +10,18 @@ const initialState = {
 
 const changeTopPanel = (state = initialState, action) => {
   switch(action.type){
-    case GET_EXPENSIVE: {
+    case GET_EXPENSIVE:
       return {
         ...state,
         expensive: true,
         fast: false
       }
-    }
-    case GET_FAST: {
+    case GET_FAST: 
       return {
         ...state,
         expensive: false,
         fast: true
       }
-    }
     default: {
       return state
     }

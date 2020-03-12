@@ -61,20 +61,20 @@ export const threeTransferAction = () => {
 
 //Get data Actions
 const loadDataAction = () => {
-  return{
+  return {
     type: LOAD_DATA,
   }
 }
 
 const dataAction = payload => {
-  return{
+  return {
     type: GET_DATA,
     payload
   }
 }
 
 const errorDataAction = payload => {
-  return{
+  return {
     type: ERROR_DATA,
     payload
   }
@@ -91,13 +91,13 @@ const getTicketsFromApi = param => dispatch => {
 
 
 const loadParamAction = () => {
-  return{
+  return {
     type: LOAD_PARAM,
   }
 }
 
 const errorParamAction = payload => {
-  return{
+  return {
     type: ERROR_PARAM,
     payload
   }
@@ -113,13 +113,13 @@ export const getDataFromApi = () => dispatch => {
 
 // Load Button Actions
 export const loadButtonAction = () => {
-  return{
+  return {
     type: ADD_LOAD_TICKETS,
   }
 }
 
 export const checkFilterTicketsAction = payload => {
-  return{
+  return {
     type: FILTER_TICKETS,
     payload
   }

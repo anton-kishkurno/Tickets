@@ -5,7 +5,7 @@ import { expensiveAction, fastAction} from '../../redux/actions'
 
 const TopPanel = props => {
   const {expensive, fast, selectExpensive, selectFast} = props
-  return(
+  return (
     <div className="top-panel">
       <p  className={`top-panel__button ${expensive && 'active'}`}
           onClick={selectExpensive}>

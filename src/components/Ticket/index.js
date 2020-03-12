@@ -4,7 +4,7 @@ import './style.scss'
 
 const Ticket = props => {
   const { price, carrier, segments } = props
-  return(
+  return (
     <div className="ticket">
       <div className="ticket-top">
         <p className="ticket-top__price">{price} Р</p>

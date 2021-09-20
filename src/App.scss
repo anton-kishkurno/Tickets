@@ -1,0 +1,14 @@
+.App {
+  &__logo {
+    display: block;
+    margin: 50px auto 30px
+  }
+  &__row {
+    display: flex;
+    justify-content: center;
+    margin: 0 -10px;
+  }
+  &__col {
+    padding: 0 10px;
+  }
+}

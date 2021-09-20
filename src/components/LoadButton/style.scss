@@ -1,0 +1,30 @@
+.button{
+  margin-bottom: 100px;
+  text-align: center;
+  &__click{
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #2196F3;
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius: 5px;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+    user-select: none;
+    transition: all 300 ms ease-in;
+    &:active{
+      opacity: 0.6;
+    }
+    &.disabled{
+      background-color: #A0B0B9;
+      opacity: 0.5;
+      &:hover{
+        background-color: #A0B0B9;
+      }
+    }
+    &:hover{
+      background-color: rgb(18, 124, 211);
+    }
+  }
+}

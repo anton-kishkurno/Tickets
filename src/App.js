@@ -6,6 +6,7 @@ import { getDataFromApi } from './redux/actions'
 import './App.scss'
 
 const App = props => {
+    console.log(1);
     const { getData } = props
     useEffect(() => {
       getData()
